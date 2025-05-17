@@ -1,0 +1,129 @@
+/* Start Global Style */
+:root {
+    --main-color: #e65f78;
+    --bg-main: #f1f1f1;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.max-500 {
+    max-width: 500px;
+}
+
+.bg-main {
+    background-color: var(--bg-main);
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+/* Start Navbar */
+.navbar-nav {
+    --bs-navbar-active-color: var(--main-color);
+}
+
+.nav-hover {
+    --bs-nav-link-hover-color: var(--main-color);
+}
+
+/* Start header */
+
+.header {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../imgs/counters-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-custom {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #fff;
+
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+
+    --bs-btn-padding-x: 30px;
+    --bs-btn-padding-y: 10px;
+    --bs-btn-border-radius: 90px;
+}
+
+.pill {
+    width: 35px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+.dott {
+    width: 4px;
+    height: 9px;
+    background-color: #fff;
+    border-radius: 30%;
+}
+
+/* Start About Section */
+
+.about .icon-holder {
+    display: flex;
+}
+
+.about .icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #bababa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.about .icon i {
+    transition: all 0.3s ease;
+}
+
+.about .icon:hover {
+    border-color: var(--main-color);
+}
+
+.about .icon:hover i {
+    color: var(--main-color);
+}
+
+/* start blog */
+.blog .btn-custom {
+    --bs-btn-color: #000;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #fff;
+
+    --bs-btn-hover-color: #787878;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: transparent;    
+    --bs-btn-padding-x: none;
+    --bs-btn-padding-y: none;
+    --bs-btn-border-radius: none;
+}
+
+/* Start client style*/
+.client .carousel-icon {
+    color: var(--main-color);
+}
+
+.client .carousel-indicators [data-bs-target] {
+    height: 7px;
+    background-color: var(--main-color);
+}

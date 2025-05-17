@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KERRI</title>
+    <!-- boostrap css -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- animations style -->
+    <link rel="stylesheet" href="./CSS/animations.css" />
+    <!-- main style -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- media style -->
+    <link rel="stylesheet" href="./CSS/media.css" />
+  </head>
+  <body data-bs-spy="scroll">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-hover ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#client">Client</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Start Header -->
+    <header
+      id="home"
+      class="header position-relative min-vh-100 d-flex align-items-center justify-content-center"
+    >
+      <div class="container position-relative text-center text-white">
+        <p>Welcome</p>
+        <h1>I am &nbsp;<span class="typewriter"></span></h1>
+        <p class="max-500 mx-auto">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+          incidunt. Alias, incidunt.
+        </p>
+        <a href="#" class="btn btn-custom">download</a>
+        <div
+          class="pill mt-5 mx-auto d-flex align-items-center justify-content-center"
+        >
+          <span class="dott d-block mx-auto"></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Start Main -->
+    <main>
+      <!-- About Section -->
+      <section class="about py-5" id="about">
+        <div class="container">
+          <div class="row">
+            <!-- image -->
+            <div class="col-lg-6">
+              <div class="inner p-1 border">
+                <!-- نستخدمه للتحكم والتعديل على طريقة عرض العناصر دون التعديل على العنصر الأب -->
+                <img
+                  src="imgs/about.jpg"
+                  class="d-block w-100"
+                  alt="anything"
+                />
+              </div>
+            </div>
+            <!-- content -->
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <h2>About Me</h2>
+              <h3>Hello! <strong>I'M Huthaifa Dalwan</strong></h3>
+              <p class="text-muted lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                nemo optio porro labore recusandae enim, maxime illum est
+                voluptate impedit modi asperiores incidunt saepe vel?
+              </p>
+              <p class="text-muted lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                nemo optio porro labore recusandae enim, maxime illum est
+                voluptate impedit modi asperiores incidunt saepe vel?
+              </p>
+              <p class="text-muted lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                nemo optio porro labore recusandae enim, maxime illum est
+                voluptate impedit modi asperiores incidunt saepe vel?
+              </p>
+
+              <div class="icon-holder d-flex align-items-center">
+                <div class="icon">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Client Section -->
+      <section class="client bg-main py-5 bg-main" id="client">
+        <div class="containr">
+          <!-- header -->
+          <header class="text-center mb-5">
+            <h2>Our <span class="fw-bold">Blog</span></h2>
+            <p class="text-secondary max-500 mx-auto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+              sequi quidem. Ratione rerum veniam laborum!
+            </p>
+
+            <!-- Start Carousl -->
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <!-- imgs -->
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <div
+                    class="inner d-flex flex-column align-items-center justify-content-center gap-3"
+                  >
+                    <i class="fa-solid fa-quote-left fs-1 carousel-icon"></i>
+                    <img
+                      class="rounded-circle"
+                      src="imgs/testi-1.jpg"
+                      class=""
+                      alt="..."
+                    />
+                    <blockquote
+                      class="max-500 text-center"
+                      cite="www.jumpofsuccess.com"
+                    >
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Libero praesentium necessitatibus ex sequi
+                        voluptatibus atque? Amet.
+                      </p>
+                      <footer>
+                        -Huthaifa Dalwan <cite>jumpofsuccess</cite>
+                      </footer>
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                  <div
+                    class="inner d-flex flex-column align-items-center justify-content-center gap-3"
+                  >
+                    <i class="fa-solid fa-quote-left fs-1 carousel-icon"></i>
+                    <img
+                      class="rounded-circle"
+                      src="imgs/testi-1.jpg"
+                      class=""
+                      alt="..."
+                    />
+                    <blockquote
+                      class="max-500 text-center"
+                      cite="www.jumpofsuccess.com"
+                    >
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Libero praesentium necessitatibus ex sequi
+                        voluptatibus atque? Amet.
+                      </p>
+                      <footer>
+                        -Huthaifa Dalwan <cite>jumpofsuccess</cite>
+                      </footer>
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                  <div
+                    class="inner d-flex flex-column align-items-center justify-content-center gap-3"
+                  >
+                    <i class="fa-solid fa-quote-left fs-1 carousel-icon"></i>
+                    <img
+                      class="rounded-circle"
+                      src="imgs/testi-1.jpg"
+                      class=""
+                      alt="..."
+                    />
+                    <blockquote
+                      class="max-500 text-center"
+                      cite="www.jumpofsuccess.com"
+                    >
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Libero praesentium necessitatibus ex sequi
+                        voluptatibus atque? Amet.
+                      </p>
+                      <footer>
+                        -Huthaifa Dalwan <cite>jumpofsuccess</cite>
+                      </footer>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+
+              <!-- buttons -->
+              <div class="carousel-indicators position-static">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+            </div>
+          </header>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section class="blog py-5" id="blog">
+        <div class="container">
+          <!-- header -->
+          <header class="text-center mb-5">
+            <h2>Our <span class="fw-bold">Blog</span></h2>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+              sequi quidem. Ratione rerum veniam laborum!<br />Lorem ipsum dolor
+              sit amet consectetur.
+            </p>
+          </header>
+
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="card p-1">
+                <img src="imgs/blog-1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h3 class="card-title h5">Card title</h3>
+                  <p class="card-text">
+                    11 March 2025 <strong class="text-main">By Huthaifa</strong>
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque suscipit sint distinctio nobis sunt dolores molestiae
+                    qui ut quam? Possimus eligendi eaque magnam praesentium
+                    inventore.
+                  </p>
+                  <a href="#" class="btn btn-custom">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card p-1">
+                <img src="imgs/blog-1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h3 class="card-title h5">Card title</h3>
+                  <p class="card-text">
+                    11 March 2025 <strong class="text-main">By Huthaifa</strong>
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque suscipit sint distinctio nobis sunt dolores molestiae
+                    qui ut quam? Possimus eligendi eaque magnam praesentium
+                    inventore.
+                  </p>
+                  <a href="#" class="btn btn-custom">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card p-1">
+                <img src="imgs/blog-1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h3 class="card-title h5">Card title</h3>
+                  <p class="card-text">
+                    11 March 2025 <strong class="text-main">By Huthaifa</strong>
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque suscipit sint distinctio nobis sunt dolores molestiae
+                    qui ut quam? Possimus eligendi eaque magnam praesentium
+                    inventore.
+                  </p>
+                  <a href="#" class="btn btn-custom">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Start Footer -->
+    <footer></footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
